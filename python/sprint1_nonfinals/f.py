@@ -1,5 +1,7 @@
 def is_palindrome(line: str) -> bool:
-    # Здесь реализация вашего решения
+    line.capitalize()
+    
+    print(line)
     pass
 
 print(is_palindrome(input().strip()))
