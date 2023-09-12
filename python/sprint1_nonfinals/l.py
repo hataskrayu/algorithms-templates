@@ -1,8 +1,11 @@
 from typing import Tuple
 
 def get_excessive_letter(shorter: str, longer: str) -> str:
-    # Здесь реализация вашего решения
-    pass
+    long_str = list(longer)
+    for i in range(0, len(shorter)):
+        long_str.pop(long_str.index(shorter[i]))
+  
+    return long_str[0]
 
 def read_input() -> Tuple[str, str]:
     shorter = input().strip()
