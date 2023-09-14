@@ -1,10 +1,12 @@
-length = int(input())
-number_list = list(map(int, input().strip().split()))
+def game_score(k: int, matrix: list[list[int]]) -> int:
+    pass
 
 
 k = int(input())
-matrix = []
+matrix = list()
 for i in range(4):
-    matrix.append(list(map(int, input().strip().split())))
+    matrix.append(map(int, input().strip().replace('.', '0').split()))
 
-print_result(to_nearest_zero(length, number_list))
+print(matrix)
+
+print(game_score(k, matrix))
